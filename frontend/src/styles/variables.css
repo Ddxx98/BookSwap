@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light dark;
+
+  /* Brand */
+  --color-primary: #4f46e5;     /* Indigo */
+  --color-accent: #16a34a;      /* Green */
+
+  /* Surfaces & text (light defaults) */
+  --color-surface: #ffffff;
+  --color-elevated: #f8fafc;
+  --color-border: #e5e7eb;
+  --color-text: #0f172a;
+  --color-muted: #6b7280;
+
+  /* Shadows / radii / spacing */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+}

@@ -1,0 +1,96 @@
+/* Container */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+} /* [1][2] */
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+} /* [1][2] */
+
+/* Brand */
+.brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  text-decoration: none;
+  letter-spacing: 0.2px;
+} /* [1][2] */
+
+/* Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+} /* [1][2] */
+
+.nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+} /* [1][2] */
+
+.nav a:hover {
+  background: var(--color-elevated);
+} /* [1][2] */
+
+/* Active route */
+.active {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+} /* [1][2] */
+
+/* Spacer between left links and auth controls */
+.spacer {
+  display: inline-block;
+  width: 1rem;
+} /* [1][2] */
+
+/* Welcome text (username) */
+.welcome {
+  margin-left: 0.25rem;
+  color: var(--color-muted);
+  font-weight: 600;
+} /* [1][2] */
+
+/* Logout button */
+.logoutBtn {
+  margin-left: 0.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+} /* [1][2] */
+
+.logoutBtn:hover {
+  background: var(--color-elevated);
+  border-color: var(--color-border);
+} /* [1][2] */
+
+/* Small screens */
+@media (max-width: 420px) {
+  .nav {
+    gap: 0.5rem;
+  }
+  .brand {
+    font-size: 1.1rem;
+  }
+} /* [1][2] */

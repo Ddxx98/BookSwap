@@ -1,0 +1,30 @@
+/* Opt-in theme switch: set <html data-theme="dark"> or body[data-theme="dark"] */
+:root[data-theme="light"], body[data-theme="light"] {
+  --color-surface: #ffffff;
+  --color-elevated: #f8fafc;
+  --color-border: #e5e7eb;
+  --color-text: #0f172a;
+  --color-muted: #6b7280;
+  --color-primary: #4f46e5;
+}
+
+:root[data-theme="dark"], body[data-theme="dark"] {
+  --color-surface: #0b1020;
+  --color-elevated: #11172a;
+  --color-border: #1f2937;
+  --color-text: #e5e7eb;
+  --color-muted: #94a3b8;
+  --color-primary: #8b5cf6;
+}
+
+/* Optional: auto theme using prefers-color-scheme if no data-theme set */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]), body:not([data-theme]) {
+    --color-surface: #0b1020;
+    --color-elevated: #11172a;
+    --color-border: #1f2937;
+    --color-text: #e5e7eb;
+    --color-muted: #94a3b8;
+    --color-primary: #8b5cf6;
+  }
+}
