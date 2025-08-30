@@ -19,7 +19,7 @@ export default function MyRequests() {
     dispatch(fetchMyRequests());
   }, [dispatch]);
 
-  const goBrowse = () => navigate("/"); // or "/books"
+  const goBrowse = () => navigate("/books"); // or "/books"
   const goIncoming = () => navigate("/requests/incoming");
 
   return (

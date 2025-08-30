@@ -24,11 +24,11 @@ export default function Header() {
           <NavLink to="/" end className={({ isActive }) => (isActive ? styles.active : undefined)}>
             Home
           </NavLink>
-          <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : undefined)}>
-            About
-          </NavLink>
           <NavLink to="/dashboard" className={({ isActive }) => (isActive ? styles.active : undefined)}>
             Dashboard
+          </NavLink>
+          <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+            About
           </NavLink>
 
           <span className={styles.spacer} />

@@ -15,6 +15,10 @@ export default function Home() {
     navigate("/books/new");
   };
 
+  const goDashboard = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <main className={styles.wrapper}>
       <section className={styles.hero}>
@@ -25,6 +29,9 @@ export default function Home() {
         <div className={styles.actions}>
           <Button onClick={goBrowse}>Browse Books</Button>
           <Button variant="secondary" onClick={goPost}>Post a Book</Button>
+        </div>
+        <div className={styles.actions}>
+            <Button variant="secondary" onClick={goDashboard}>Go to Dashboard</Button>
         </div>
       </section>
 
